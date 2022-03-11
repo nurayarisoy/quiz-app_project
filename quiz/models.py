@@ -77,7 +77,8 @@ class Answer(Updated):
         max_length=300, verbose_name=('Answer Text'))
     is_right=models.BooleanField(default=False)
     
-    
+    def __str__(self):
+        return self.ansver_text
     
     
 
